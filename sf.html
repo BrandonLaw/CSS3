@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color:green;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color: #eeeeee;
+    height:390px;
+    width:100px;
+    float: left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:30px;	 	 
+}
+footer {
+    background-color:green;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+img {
+	float: right;
+	width: 400px;
+    height: 250px;
+	margin:90px 20px 0px 0px;
+}
+</style>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<h1>City Gallery</h1>
+</header>
+
+<nav>
+<a href="london.html">London</a><br>
+<a href="sf.html">San Francisco</a><br>
+<a href="lv.html">Las Vegas</a>
+</nav>
+
+<section>
+<h1>San Francisco</h1>
+<p>San Francisco is located in California, and is the only consolidated city-county in California as well. It is about 46.9 (121 km) square miles, and contains 18,187 people per square mile. It is the second-most densely populated major city in the United States, right after New York City. 
+</p>
+<p>San Francisco has many places to visit for tourism, such as the Golden Gate Bridge, Yerba Buena Gardens, and is a nice place to just explore around. An amazing fact about San Francisco is that it was home to the first lesbian-rights orginization of the United Sates. 
+</p>
+
+</section>
+<aside>
+<img src="http://www.jetblue.com/img/vacations/destination/San-Francisco-960-x-420.jpg" alt="San Francisco">
+</aside>
+<footer>
+&copy; Brandon Law 2016
+</footer>
+
+</body>
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/sports/spo-5/spo423.cur), progress !important;}</style>
+</html>
